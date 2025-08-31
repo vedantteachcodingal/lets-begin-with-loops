@@ -42,9 +42,20 @@
 
 ## pattern
 # question - print mirrored right angled triangle of stars
-rows = int(input("Enter the number of rows for mirrored right angled triangle: "))
-for r in range(1, rows + 1):
-    print(" " * (rows - r), end="")
-    print("*" * r)
+# rows = int(input("Enter the number of rows for mirrored right angled triangle: "))
+# for r in range(1, rows + 1):
+#     print(" " * (rows - r), end="")
+#     print("*" * r)
 
 ## introduction to turtle
+# question - make the turtle draw a triangle
+import turtle
+screen = turtle.Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("orange")
+t = turtle.Turtle()
+
+for i in range(3):
+    t.forward(100)
+    t.right(120)
+turtle.done()

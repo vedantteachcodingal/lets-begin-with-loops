@@ -100,19 +100,29 @@
 
 ## pattern
 # understanding how to print without going to the next line
-print(1, end=" ")
-print(2)
-print(3)
-print()
-print(4)
+# print(1, end=" ")
+# print(2)
+# print(3)
+# print()
+# print(4)
 
-# Floyd's triangle
-rows = int(input("Enter the number of rows for Floyd's triangle: "))
-f = 1
-for r in range(1, rows + 1):
-    for c in range(1, r + 1):
-        print(f, end=" ")
-        f = f + 1
-    print()
+# # Floyd's triangle
+# rows = int(input("Enter the number of rows for Floyd's triangle: "))
+# f = 1
+# for r in range(1, rows + 1):
+#     for c in range(1, r + 1):
+#         print(f, end=" ")
+#         f = f + 1
+#     print()
 
 ## introduction to turtle
+import turtle
+screen = turtle.Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("orange")
+t = turtle.Turtle()
+
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+turtle.done()
